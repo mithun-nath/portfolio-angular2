@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-
+import { SkillsService } from './skills.service';
 @Component ({
     selector : 'my-skills',
     template : `
@@ -9,8 +9,14 @@ import {Component} from 'angular2/core'
         {{ skill }} 
         </li>
     </ul>
-    `  
+    `,
+    providers: [SkillsService]  
 })
 export class MySkills {
-skills = ["HTML","CSS","Javascript","Angular","Typesript"];    
+skills;
+
+constructor(skillsService : SkillsService){
+   this.skills = skillsService.getSkills();
  }
+
+}

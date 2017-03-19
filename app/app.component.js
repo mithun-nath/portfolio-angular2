@@ -1,4 +1,4 @@
-System.register(['angular2/core', './skills.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './skills.component', './certifications.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './skills.component'], function(exports_1, con
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, skills_component_1;
+    var core_1, skills_component_1, certifications_component_1;
     var AppComponent;
     return {
         setters:[
@@ -19,6 +19,9 @@ System.register(['angular2/core', './skills.component'], function(exports_1, con
             },
             function (skills_component_1_1) {
                 skills_component_1 = skills_component_1_1;
+            },
+            function (certifications_component_1_1) {
+                certifications_component_1 = certifications_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -27,8 +30,8 @@ System.register(['angular2/core', './skills.component'], function(exports_1, con
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>My First Angular 2 App</h1> <my-skills></my-skills>',
-                        directives: [skills_component_1.MySkills]
+                        template: '<h1>My First Angular 2 App</h1> <my-skills></my-skills><my-certification></my-certification>',
+                        directives: [skills_component_1.MySkills, certifications_component_1.MyCertification]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

@@ -11,7 +11,7 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, skills_service_1;
-    var MySkills;
+    var MyCertification;
     return {
         setters:[
             function (core_1_1) {
@@ -21,22 +21,22 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
                 skills_service_1 = skills_service_1_1;
             }],
         execute: function() {
-            MySkills = (function () {
-                function MySkills(skillsService) {
-                    this.skills = skillsService.getSkills();
+            MyCertification = (function () {
+                function MyCertification(certificationsService) {
+                    this.certifications = certificationsService.getCertifications();
                 }
-                MySkills = __decorate([
+                MyCertification = __decorate([
                     core_1.Component({
-                        selector: 'my-skills',
-                        template: "\n    <h2> My Skills </h2>\n     <ul>\n        <li *ngFor=\"#skill of skills\"> \n        {{ skill }} \n        </li>\n    </ul>\n    ",
+                        selector: 'my-certification',
+                        template: "\n<h2>My Certifications</h2>\n<ul>\n        <li *ngFor=\"#certification of certifications\"> \n        {{ certification }} \n        </li>\n    </ul>\n",
                         providers: [skills_service_1.SkillsService]
                     }), 
                     __metadata('design:paramtypes', [skills_service_1.SkillsService])
-                ], MySkills);
-                return MySkills;
+                ], MyCertification);
+                return MyCertification;
             }());
-            exports_1("MySkills", MySkills);
+            exports_1("MyCertification", MyCertification);
         }
     }
 });
-//# sourceMappingURL=skills.component.js.map
+//# sourceMappingURL=certifications.component.js.map
