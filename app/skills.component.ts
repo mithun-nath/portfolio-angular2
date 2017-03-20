@@ -1,9 +1,10 @@
 import {Component} from 'angular2/core'
 import { SkillsService } from './skills.service';
+
 @Component ({
     selector : 'my-skills',
     template : `
-    <h2> My Skills </h2>
+    <h2 class="text-center"> My Skills </h2>
      <ul>
         <li *ngFor="#skill of skills"> 
         {{ skill }} 

@@ -14,6 +14,13 @@ System.register([], function(exports_1, context_1) {
                 SkillsService.prototype.getCertifications = function () {
                     return ["Hadoop", "Map Reduce", "SEO"];
                 };
+                SkillsService.prototype.getProfile = function () {
+                    return {
+                        name: '\{Mithun Nath Mayooranadhan\}',
+                        position: '\{Front End Developer\}',
+                        socials: ["GitHub", "LinkedIn", "CodePen"],
+                    };
+                };
                 return SkillsService;
             }());
             exports_1("SkillsService", SkillsService);

@@ -11,7 +11,7 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, skills_service_1;
-    var MySkills;
+    var MyProfile;
     return {
         setters:[
             function (core_1_1) {
@@ -21,22 +21,24 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
                 skills_service_1 = skills_service_1_1;
             }],
         execute: function() {
-            MySkills = (function () {
-                function MySkills(skillsService) {
-                    this.skills = skillsService.getSkills();
+            MyProfile = (function () {
+                function MyProfile(profileService) {
+                    this.socials = profileService.getProfile().socials;
+                    this.name = profileService.getProfile().name;
+                    this.position = profileService.getProfile().position;
                 }
-                MySkills = __decorate([
+                MyProfile = __decorate([
                     core_1.Component({
-                        selector: 'my-skills',
-                        template: "\n    <h2 class=\"text-center\"> My Skills </h2>\n     <ul>\n        <li *ngFor=\"#skill of skills\"> \n        {{ skill }} \n        </li>\n    </ul>\n    ",
+                        selector: 'my-profile',
+                        template: "\n    <h1>{{name}}</h1>\n    <h2>{{position}}</h2>\n    \n            <ul> \n                 <li *ngFor=\"#social of socials\"> \n                   {{ social }} \n                 </li>\n            </ul>",
                         providers: [skills_service_1.SkillsService]
                     }), 
                     __metadata('design:paramtypes', [skills_service_1.SkillsService])
-                ], MySkills);
-                return MySkills;
+                ], MyProfile);
+                return MyProfile;
             }());
-            exports_1("MySkills", MySkills);
+            exports_1("MyProfile", MyProfile);
         }
     }
 });
-//# sourceMappingURL=skills.component.js.map
+//# sourceMappingURL=profile.component.js.map
