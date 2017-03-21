@@ -1,7 +1,21 @@
-  <h2 class="skills-title text-center"> {{myskills}} </h2>
-     <ul class="fa-ul">
-        <li *ngFor="#skill of skills" class="skills"> 
-           <i class="fa fa-check fa-2x fa-fw check-color"></i>
-             {{ skill }} 
-        </li>
-    </ul>
+
+
+
+
+<div class="container">
+<div class="headline">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="text-center skills-title">{{myskills}}</h2>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 skill-element"  *ngFor="#skill of skills">
+           
+                     <i class="devicon-{{skill}}-plain devicon-icon-custom"></i>
+
+            </div>
+
+            </div>
+        </div>
+</div>

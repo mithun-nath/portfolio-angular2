@@ -4,8 +4,8 @@ export class SkillsService{
 
     getSkills(){
         return {
-            myskills: '\{My Technical Skills\}',
-            skills: ["HTML","CSS","Javascript","Angular","Typesript"]
+            myskills: '\{My Skills\}',
+            skills: ["HTML5","CSS3","javascript","mongodb","angularjs","nodejs","php","mysql","bootstrap","git","wordpress","sass"],
         } 
         
         
@@ -22,7 +22,7 @@ export class SkillsService{
         return {
                 name : '\{Mithun Nath Mayooranadhan\}',
                 position: '\{Front End Developer\}',
-                socials: ["GitHub", "LinkedIn", "CodePen"],
+                socials: ["fa-github", "fa-linkedin", "fa-codepen"],
                 };
     }
 

@@ -1,137 +1,229 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Baloo|Kaushan+Script|Pacifico');
 
-
-body{
-  font-family: 'Lora','Times New Roman',serif;
-  font-size: 20px;
-  color:#333333;
+body {
+    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-p{
-  line-height: 1.5;
-  margin:30px 0;
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+      background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-text-fill-color: #fff;
 }
 
-p a{
-  text-decoration: underline;
+.headline {
+    padding: 100px 0;
 }
 
-h1
-h2
-h3
-h4
-h5
-h6{
-  font-family: 'Baloo', cursive;
-  font-weight: 800;
+.headline h1 {
+    font-size: 130px;
+   
 }
 
-a{
-  color: #333333;
+.headline h2 {
+    font-size: 77px;
+   
 }
 
-a:hover,
-a:focus{
-  color:#0085A1;
+.featurette-divider {
+    margin: 80px 0;
+
+}
+.skills-styles{
+       width:500px;
+
+}
+.featurette {
+   /* overflow: hidden;*/
 }
 
-a img:hover,
-a img:focus{
-  cursor:zoom-in;
+.featurette-image.pull-left {
+    margin-right: 40px;
 }
 
-.skills-item{
-  font-family: 'Baloo', cursive;
-  font-size:20px;
+.featurette-image.pull-right {
+    margin-left: 40px;
 }
 
-.site_title{
-  font-family: 'Abel', sans-serif;
-  font-size: 60px;
+.featurette-heading {
+    font-size: 50px;
 }
 
-.site-subtitle{
-  font-family: 'Kaushan Script', cursive;
-
-/*  font-family: 'Pacifico', cursive;*/
-  font-size: 25px;
+footer {
+    margin: 50px 0;
 }
 
-.skills-title{
-  font-family: 'Abel', sans-serif;
-  font-size: 45px;
-}
-hr.divider{
-  max-width: 700px;
-  margin: 15px auto;
-  border: 1px dotted black;
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
 }
 
-.skills-subtitle{
-  font-family: 'Abel', sans-serif;
-  font-size: 25px;
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
 }
 
-.footer-text{
-  font-family: 'Kaushan Script', cursive;
-  font-size: 16px;
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
 }
 
-.profile-pic{
-width:50px;
-height:50px;
-border-radius:50%;
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
 }
 
-.check-color{
-  color:#333333;
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
 }
 
-.check-color-blue{
-  color:#333333;
-}
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
 
-.portfolio{
-  margin:50px 0px 20px 60px;
-}
+    .featurette-image {
+        max-width: 100%;
+    }
 
-.portfolio-title{
-  font-family: 'Abel', sans-serif;
-  font-size: 45px;
-}
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-.portfolio-name{
-  font-family: 'Abel', sans-serif;
-  font-size: 35px;
-}
-
-.portfolio-details{
-  font-family: 'Abel', sans-serif;
-  font-size: 25px;
-}
-
-.what-you-do-at-portfolio{
-  font-family: 'Abel', sans-serif;
-  font-size: 20px;
-}
-
-.navbar-custom{
-  background:transparent;
-  border:none;
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
 }
 
 /*
-
-section {
-  padding: 100px 0;
-  width:100%;
-  height:100%;
+.thumbnail{
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+      background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-text-fill-color: #fff;
 }
-
-@media (max-width: 767px) {
-  section {
-    padding: 75px 0;
-  }
-}
-
 */
+
+.skill-element{
+    margin-top:50px;
+}
+
+.devicon-icon-custom{
+  font-size: 180px;
+  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills-title{
+background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+#contact {
+background: -webkit-linear-gradient(to left, #7b4397,#dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  color:#fff;
+
+  }
+#contact a{
+    color:#fff;
+}
+  .contact-heading{
+      color:#fff;
+  }
+  .footer-text{
+      color:#fff;
+  }

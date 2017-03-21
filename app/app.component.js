@@ -36,7 +36,7 @@ System.register(['angular2/core', './skills/skills.component', './certifications
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <my-profile></my-profile>\n    <my-skills></my-skills>\n    <my-certification></my-certification>\n    <my-footer></my-footer>\n    ",
+                        template: "\n    <my-profile></my-profile>\n    <my-skills></my-skills>\n    <!--<my-certification></my-certification>-->\n    <my-footer></my-footer>\n    ",
                         directives: [skills_component_1.MySkills, certifications_component_1.MyCertification, profile_component_1.MyProfile, footer_component_1.Footer]
                     }), 
                     __metadata('design:paramtypes', [])

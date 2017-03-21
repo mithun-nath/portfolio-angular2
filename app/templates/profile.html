@@ -1,4 +1,4 @@
-  <section class="intro-section">
+<!--  <section class="intro-section">
           <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -27,3 +27,29 @@
                     </div>
         </div>
     </section>
+
+-->
+
+        <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>{{name}}</h1>
+                
+                <h2>{{position}}</h2>
+                
+                 <ul class="list-inline text-center">
+                                  <li *ngFor="#social of socials">
+                                    <a href="https://www.linkedin.com/in/nathmithun/" target="_blank">
+                                      <span class="fa-stack fa-lg">
+                                        <i class= "fa {{social}}  fa-stack-5x fa-inverse"></i>
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+            </div>
+        </div>
+    </header>
+
+
+

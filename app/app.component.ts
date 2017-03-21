@@ -9,7 +9,7 @@ import {Footer} from './footer/footer.component'
     template: `
     <my-profile></my-profile>
     <my-skills></my-skills>
-    <my-certification></my-certification>
+    <!--<my-certification></my-certification>-->
     <my-footer></my-footer>
     `,
     directives: [MySkills, MyCertification, MyProfile, Footer]
