@@ -1,4 +1,4 @@
-System.register(['angular2/core', './skills.service'], function(exports_1, context_1) {
+System.register(['angular2/core', '../services/skills.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -11,7 +11,7 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, skills_service_1;
-    var MyProfile;
+    var MySkills;
     return {
         setters:[
             function (core_1_1) {
@@ -21,24 +21,24 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
                 skills_service_1 = skills_service_1_1;
             }],
         execute: function() {
-            MyProfile = (function () {
-                function MyProfile(profileService) {
-                    this.socials = profileService.getProfile().socials;
-                    this.name = profileService.getProfile().name;
-                    this.position = profileService.getProfile().position;
+            MySkills = (function () {
+                function MySkills(skillsService) {
+                    this.skills = skillsService.getSkills().skills;
+                    this.myskills = skillsService.getSkills().myskills;
                 }
-                MyProfile = __decorate([
+                MySkills = __decorate([
                     core_1.Component({
-                        selector: 'my-profile',
-                        template: "\n    <h1>{{name}}</h1>\n    <h2>{{position}}</h2>\n    \n            <ul> \n                 <li *ngFor=\"#social of socials\"> \n                   {{ social }} \n                 </li>\n            </ul>",
+                        selector: 'my-skills',
+                        templateUrl: 'app/templates/skills.html',
+                        styleUrls: ['app/templates/style.css'],
                         providers: [skills_service_1.SkillsService]
                     }), 
                     __metadata('design:paramtypes', [skills_service_1.SkillsService])
-                ], MyProfile);
-                return MyProfile;
+                ], MySkills);
+                return MySkills;
             }());
-            exports_1("MyProfile", MyProfile);
+            exports_1("MySkills", MySkills);
         }
     }
 });
-//# sourceMappingURL=profile.component.js.map
+//# sourceMappingURL=skills.component.js.map

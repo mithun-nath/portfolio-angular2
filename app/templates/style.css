@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Baloo|Kaushan+Script|Pacifico');
+
+
+body{
+  font-family: 'Lora','Times New Roman',serif;
+  font-size: 20px;
+  color:#333333;
+}
+
+p{
+  line-height: 1.5;
+  margin:30px 0;
+}
+
+p a{
+  text-decoration: underline;
+}
+
+h1
+h2
+h3
+h4
+h5
+h6{
+  font-family: 'Baloo', cursive;
+  font-weight: 800;
+}
+
+a{
+  color: #333333;
+}
+
+a:hover,
+a:focus{
+  color:#0085A1;
+}
+
+a img:hover,
+a img:focus{
+  cursor:zoom-in;
+}
+
+.skills-item{
+  font-family: 'Baloo', cursive;
+  font-size:20px;
+}
+
+.site_title{
+  font-family: 'Abel', sans-serif;
+  font-size: 60px;
+}
+
+.site-subtitle{
+  font-family: 'Kaushan Script', cursive;
+
+/*  font-family: 'Pacifico', cursive;*/
+  font-size: 25px;
+}
+
+.skills-title{
+  font-family: 'Abel', sans-serif;
+  font-size: 45px;
+}
+hr.divider{
+  max-width: 700px;
+  margin: 15px auto;
+  border: 1px dotted black;
+}
+
+.skills-subtitle{
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+}
+
+.footer-text{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 16px;
+}
+
+.profile-pic{
+width:50px;
+height:50px;
+border-radius:50%;
+}
+
+.check-color{
+  color:#333333;
+}
+
+.check-color-blue{
+  color:#333333;
+}
+
+.portfolio{
+  margin:50px 0px 20px 60px;
+}
+
+.portfolio-title{
+  font-family: 'Abel', sans-serif;
+  font-size: 45px;
+}
+
+.portfolio-name{
+  font-family: 'Abel', sans-serif;
+  font-size: 35px;
+}
+
+.portfolio-details{
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+}
+
+.what-you-do-at-portfolio{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+
+.navbar-custom{
+  background:transparent;
+  border:none;
+}
+
+/*
+
+section {
+  padding: 100px 0;
+  width:100%;
+  height:100%;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+}
+
+*/

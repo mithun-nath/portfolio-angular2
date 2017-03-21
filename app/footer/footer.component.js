@@ -1,4 +1,4 @@
-System.register(['angular2/core', './skills.service'], function(exports_1, context_1) {
+System.register(['angular2/core', '../services/skills.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -11,7 +11,7 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, skills_service_1;
-    var MyCertification;
+    var Footer;
     return {
         setters:[
             function (core_1_1) {
@@ -21,22 +21,22 @@ System.register(['angular2/core', './skills.service'], function(exports_1, conte
                 skills_service_1 = skills_service_1_1;
             }],
         execute: function() {
-            MyCertification = (function () {
-                function MyCertification(certificationsService) {
-                    this.certifications = certificationsService.getCertifications();
+            Footer = (function () {
+                function Footer(footer) {
+                    this.footerText = footer.getFooter().footerText;
                 }
-                MyCertification = __decorate([
+                Footer = __decorate([
                     core_1.Component({
-                        selector: 'my-certification',
-                        template: "\n<h2>My Certifications</h2>\n<ul>\n        <li *ngFor=\"#certification of certifications\"> \n        {{ certification }} \n        </li>\n    </ul>\n",
-                        providers: [skills_service_1.SkillsService]
+                        selector: 'my-footer', providers: [skills_service_1.SkillsService],
+                        templateUrl: 'app/templates/footer.html',
+                        styleUrls: ['app/templates/style.css']
                     }), 
                     __metadata('design:paramtypes', [skills_service_1.SkillsService])
-                ], MyCertification);
-                return MyCertification;
+                ], Footer);
+                return Footer;
             }());
-            exports_1("MyCertification", MyCertification);
+            exports_1("Footer", Footer);
         }
     }
 });
-//# sourceMappingURL=certifications.component.js.map
+//# sourceMappingURL=footer.component.js.map

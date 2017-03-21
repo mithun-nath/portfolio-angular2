@@ -9,16 +9,27 @@ System.register([], function(exports_1, context_1) {
                 function SkillsService() {
                 }
                 SkillsService.prototype.getSkills = function () {
-                    return ["HTML", "CSS", "Javascript", "Angular", "Typesript"];
+                    return {
+                        myskills: '\{My Technical Skills\}',
+                        skills: ["HTML", "CSS", "Javascript", "Angular", "Typesript"]
+                    };
                 };
                 SkillsService.prototype.getCertifications = function () {
-                    return ["Hadoop", "Map Reduce", "SEO"];
+                    return {
+                        certification: 'My Certifications',
+                        certificates: ["Hadoop", "Map Reduce", "SEO"]
+                    };
                 };
                 SkillsService.prototype.getProfile = function () {
                     return {
                         name: '\{Mithun Nath Mayooranadhan\}',
                         position: '\{Front End Developer\}',
                         socials: ["GitHub", "LinkedIn", "CodePen"],
+                    };
+                };
+                SkillsService.prototype.getFooter = function () {
+                    return {
+                        footerText: '\{Designed and Developed by Mithun Nath Mayooranadhan\}'
                     };
                 };
                 return SkillsService;

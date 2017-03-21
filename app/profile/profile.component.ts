@@ -1,17 +1,10 @@
 import {Component} from 'angular2/core'
-import { SkillsService } from './skills.service';
+import { SkillsService } from '../services/skills.service';
 
 @Component({
     selector:'my-profile',
-    template: `
-    <h1>{{name}}</h1>
-    <h2>{{position}}</h2>
-    
-            <ul> 
-                 <li *ngFor="#social of socials"> 
-                   {{ social }} 
-                 </li>
-            </ul>`,
+    templateUrl:'app/templates/profile.html',
+    styleUrls: ['app/templates/style.css'],
     providers: [SkillsService]  
 })
 

@@ -1,7 +1,8 @@
 import {Component} from 'angular2/core';
-import {MySkills} from './skills.component'
-import {MyCertification} from './certifications.component'
-import {MyProfile} from './profile.component'
+import {MySkills} from './skills/skills.component'
+import {MyCertification} from './certifications/certifications.component'
+import {MyProfile} from './profile/profile.component'
+import {Footer} from './footer/footer.component'
 
 @Component ({
     selector: 'my-app',
@@ -9,8 +10,9 @@ import {MyProfile} from './profile.component'
     <my-profile></my-profile>
     <my-skills></my-skills>
     <my-certification></my-certification>
+    <my-footer></my-footer>
     `,
-    directives: [MySkills,MyCertification,MyProfile]
+    directives: [MySkills, MyCertification, MyProfile, Footer]
 })
 export class AppComponent {
 
